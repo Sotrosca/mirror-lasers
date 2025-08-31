@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://d078nc8vgyy7u"]
+[gd_scene load_steps=7 format=3 uid="uid://b8wdpf0t3fxft"]
 
 [ext_resource type="Script" uid="uid://bvia7ksmrgybg" path="res://scripts/main.gd" id="1_5kpxc"]
 [ext_resource type="Texture2D" uid="uid://d2i53nqvbehv" path="res://tile.png" id="2_yv23c"]
@@ -20,8 +20,9 @@ tile_size = Vector2i(128, 128)
 sources/1 = SubResource("TileSetAtlasSource_jyhfs")
 sources/2 = SubResource("TileSetAtlasSource_tbgi4")
 
-[node name="Main" type="Node2D"]
+[node name="Main_Large" type="Node2D"]
 script = ExtResource("1_5kpxc")
+GridSize = 8
 
 [node name="Camera2D" type="Camera2D" parent="."]
 enabled = false
