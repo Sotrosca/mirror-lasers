@@ -1,0 +1,33 @@
+# Godot 4+ specific
+.godot/
+.import/
+/android/
+/ios/
+export.cfg
+export_presets.cfg
+
+# Mono (future C# support)
+.mono/
+
+# Editor / OS clutter
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Builds / exports
+build/
+dist/
+release/
+
+# Virtual envs (tooling)
+venv/
+
+# Crash dumps
+*.stackdump

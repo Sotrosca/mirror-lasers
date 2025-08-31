@@ -1,0 +1,863 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp04ttmv1wdke"]
+
+[ext_resource type="Script" uid="uid://dq4kamus5f7c8" path="res://scripts/legacy/Level1_VisualEditor.gd" id="1"]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="GameBoard" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -289.0
+offset_top = -242.0
+offset_right = 255.0
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="UI/GameBoard"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 180.0
+offset_top = -24.0
+offset_right = 180.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 2
+columns = 8
+
+[node name="Cell_0_0" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_0_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_1_0" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_1_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_2_0" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_2_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_3_0" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_3_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_4_0" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_4_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_5_0" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_5_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_6_0" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_6_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_7_0" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_7_0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_0_1" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_0_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_1_1" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_1_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_2_1" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_2_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_3_1" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_3_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_4_1" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_4_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_5_1" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_5_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_6_1" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_6_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_7_1" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_7_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_0_2" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_0_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_1_2" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_1_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_2_2" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_2_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_3_2" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_3_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_4_2" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_4_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_5_2" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_5_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_6_2" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_6_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_7_2" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_7_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_0_3" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_0_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_1_3" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_1_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_2_3" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_2_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_3_3" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_3_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_4_3" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_4_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_5_3" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_5_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_6_3" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_6_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_7_3" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_7_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_0_4" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_0_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_1_4" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_1_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_2_4" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_2_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_3_4" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_3_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_4_4" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_4_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_5_4" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_5_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_6_4" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_6_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_7_4" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_7_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_0_5" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_0_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_1_5" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_1_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_2_5" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_2_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_3_5" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_3_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_4_5" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_4_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_5_5" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_5_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_6_5" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_6_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cell_7_5" type="ColorRect" parent="UI/GameBoard/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Label" type="Label" parent="UI/GameBoard/GridContainer/Cell_7_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Instructions" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 35.0
+offset_top = -187.0
+offset_right = 375.0
+offset_bottom = -47.0
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="UI/Instructions"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="UI/Instructions/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="UI/Instructions/Panel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "🔴 Laser Mirror Puzzle"
+
+[node name="HSeparator" type="HSeparator" parent="UI/Instructions/Panel/VBox"]
+layout_mode = 2
+
+[node name="Controls" type="Label" parent="UI/Instructions/Panel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "🖱️ Left click: Place mirror
+🖱️ Right click: Rotate mirror
+🖱️ Middle click: Remove mirror
+⌨️ R: Reset level
+⌨️ P: Print state"
+
+[node name="HSeparator2" type="HSeparator" parent="UI/Instructions/Panel/VBox"]
+layout_mode = 2
+
+[node name="Goal" type="Label" parent="UI/Instructions/Panel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "🎯 Goal: Use mirrors to redirect
+the red laser to hit all yellow targets!"
+autowrap_mode = 2

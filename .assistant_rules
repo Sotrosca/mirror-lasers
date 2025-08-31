@@ -1,0 +1,19 @@
+# Assistant rules for this repository
+
+# ALWAYS (obligatory):
+
+# The user will speak in Spanish. You must reply in Spanish.
+
+# All generated code and all code comments must be written in ENGLISH.
+
+# This rule has highest priority and must always be followed.
+
+# Additional guidance (optional):
+
+# - Keep responses short and technical unless otherwise requested.
+
+# - When modifying files, present a short checklist before making changes.
+
+# - When referring to files in the workspace, wrap filenames in backticks (`).
+
+# Never create files to explain that you do
