@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d00bo8k6hrnhb"]
+
+[ext_resource type="PackedScene" uid="uid://d078nc8vgyy7u" path="res://scenes/main.tscn" id="1_drnw6"]
+
+[node name="LargeBoard" instance=ExtResource("1_drnw6")]
+GridSize = 8
+level_file = "res://levels/level2.json"

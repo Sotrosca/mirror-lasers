@@ -1,0 +1,44 @@
+{
+  "gridSize": 8,
+  "elements": [
+    {
+      "type": "LaserSource",
+      "position": { "x": 0, "y": 0 },
+      "direction": "Right"
+    },
+    {
+      "type": "Target",
+      "position": { "x": 7, "y": 7 }
+    },
+    {
+      "type": "Wall",
+      "position": { "x": 2, "y": 2 }
+    },
+    {
+      "type": "Wall",
+      "position": { "x": 3, "y": 2 }
+    },
+    {
+      "type": "Wall",
+      "position": { "x": 4, "y": 2 }
+    },
+    {
+      "type": "Wall",
+      "position": { "x": 5, "y": 5 }
+    },
+    {
+      "type": "Wall",
+      "position": { "x": 5, "y": 6 }
+    },
+    {
+      "type": "Mirror",
+      "position": { "x": 3, "y": 5 },
+      "rotation": 45
+    },
+    {
+      "type": "Mirror",
+      "position": { "x": 6, "y": 2 },
+      "rotation": 135
+    }
+  ]
+}

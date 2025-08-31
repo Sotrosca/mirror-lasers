@@ -1,0 +1,23 @@
+{
+  "gridSize": 4,
+  "elements": [
+	{
+	  "type": "LaserSource",
+	  "position": { "x": 0, "y": 0 },
+	  "direction": "Right"
+	},
+	{
+	  "type": "Target",
+	  "position": { "x": 3, "y": 3 }
+	},
+	{
+	  "type": "Wall",
+	  "position": { "x": 1, "y": 2 }
+	},
+	{
+	  "type": "Mirror",
+	  "position": { "x": 2, "y": 1 },
+	  "rotation": 45
+	}
+  ]
+}

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7t21l2l8arg8"]
+
+[ext_resource type="PackedScene" uid="uid://d078nc8vgyy7u" path="res://scenes/main.tscn" id="1_hbas1"]
+
+[node name="SmallBoard" instance=ExtResource("1_hbas1")]
+level_file = "res://levels/level1.json"

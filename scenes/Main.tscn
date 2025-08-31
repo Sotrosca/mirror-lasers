@@ -1,8 +1,115 @@
 [gd_scene load_steps=7 format=3 uid="uid://d078nc8vgyy7u"]
 
-[ext_resource type="Script" uid="uid://bvia7ksmrgybg" path="res://scripts/main.gd" id="1_5kpxc"]
 [ext_resource type="Texture2D" uid="uid://d2i53nqvbehv" path="res://tile.png" id="2_yv23c"]
 [ext_resource type="Texture2D" uid="uid://d383cm3foeob8" path="res://tile_selected.png" id="3_81j8p"]
+
+[sub_resource type="GDScript" id="GDScript_0m4hn"]
+script/source = "extends Node2D
+
+@onready var layer0 = $Layer0
+@onready var layer1 = $Layer1
+@onready var elements_layer = $ElementsLayer
+
+@export var GridSize: int = 4
+@export_file(\"*.json\") var level_file: String = \"\"
+
+var Dic = {}
+var elements = {}
+
+# Constantes para los tipos de elementos
+const ELEMENT_TYPES = {
+	\"LaserSource\": 3,  # Fuente de láser
+	\"Target\": 4,       # Objetivo
+	\"Wall\": 5,         # Muro
+	\"Mirror\": 6,       # Espejo
+	\"Grass\": 1         # Tile base
+}
+
+func _ready() -> void:
+	# Inicializar el grid base
+	initialize_grid()
+
+	# Cargar el nivel desde el archivo JSON si se especificó uno
+	if level_file:
+		load_level(level_file)
+		
+	print(\"Grid initialized: \", Dic)
+
+func initialize_grid() -> void:
+	for x in GridSize:
+		for y in GridSize:
+			var cell_pos = Vector2i(x, y)
+			Dic[str(cell_pos)] = {
+				\"Type\": \"Grass\"
+			}
+			layer0.set_cell(cell_pos, ELEMENT_TYPES[\"Grass\"], Vector2i(0, 0), 0)
+
+func load_level(file_path: String) -> void:
+	var json_file = FileAccess.open(file_path, FileAccess.READ)
+	if json_file:
+		var json_text = json_file.get_as_text()
+		json_file.close()
+
+		var json_result = JSON.parse_string(json_text)
+		if json_result:
+			# Si el archivo JSON define un tamaño de grid, usarlo
+			if \"gridSize\" in json_result:
+				GridSize = json_result.gridSize
+				# Reinicializar el grid con el nuevo tamaño
+				initialize_grid()
+
+			# Cargar elementos del nivel
+			if \"elements\" in json_result:
+				for element in json_result.elements:
+					place_element(element)
+		else:
+			push_error(\"Error parsing JSON file: \" + file_path)
+	else:
+		push_error(\"Could not open file: \" + file_path)
+
+func place_element(element_data: Dictionary) -> void:
+	if not \"type\" in element_data or not \"position\" in element_data:
+		push_error(\"Element data missing required fields\")
+		return
+
+	var pos_x = element_data.position.x
+	var pos_y = element_data.position.y
+	var cell_pos = Vector2i(pos_x, pos_y)
+
+	if not Dic.has(str(cell_pos)):
+		push_error(\"Position out of bounds: \" + str(cell_pos))
+		return
+
+	var element_type = element_data.type
+	if not element_type in ELEMENT_TYPES:
+		push_error(\"Unknown element type: \" + element_type)
+		return
+
+	# Actualizar el diccionario y colocar el elemento en la capa de elementos
+	Dic[str(cell_pos)][\"Type\"] = element_type
+
+	# Guardar la referencia del elemento para manipulación futura
+	elements[str(cell_pos)] = element_data
+
+	# Colocar el elemento en la capa visual
+	elements_layer.set_cell(cell_pos, ELEMENT_TYPES[element_type], Vector2i(0, 0), 0)
+
+	# Si es un espejo, aplicar rotación
+	if element_type == \"Mirror\" and \"rotation\" in element_data:
+		# La rotación se aplicaría de otra manera en un proyecto real
+		# Pero aquí simplemente almacenamos el valor para uso futuro
+		Dic[str(cell_pos)][\"Rotation\"] = element_data.rotation
+
+func _process(_delta):
+	var tile_pos = layer1.local_to_map(get_global_mouse_position())
+
+	# Clear the selection layer
+	layer1.clear()
+
+	# Draw selection tile if mouse is over the grid
+	if Dic.has(str(tile_pos)):
+		layer1.set_cell(tile_pos, 2, Vector2i(0, 0), 0)
+"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jyhfs"]
 texture = ExtResource("2_yv23c")
@@ -21,7 +128,7 @@ sources/1 = SubResource("TileSetAtlasSource_jyhfs")
 sources/2 = SubResource("TileSetAtlasSource_tbgi4")
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_5kpxc")
+script = SubResource("GDScript_0m4hn")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 enabled = false
@@ -32,6 +139,11 @@ tile_set = SubResource("TileSet_sgp6g")
 rendering_quadrant_size = 128
 
 [node name="Layer1" type="TileMapLayer" parent="."]
+use_parent_material = true
+tile_set = SubResource("TileSet_sgp6g")
+rendering_quadrant_size = 128
+
+[node name="ElementsLayer" type="TileMapLayer" parent="."]
 use_parent_material = true
 tile_set = SubResource("TileSet_sgp6g")
 rendering_quadrant_size = 128
